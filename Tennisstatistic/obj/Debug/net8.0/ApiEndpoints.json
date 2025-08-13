@@ -1,0 +1,74 @@
+[
+  {
+    "ContainingType": "TennisStatistics.Api.Controllers.PlayersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Players",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TennisStatistics.Api.Controllers.PlayersController",
+    "Method": "Create",
+    "RelativePath": "api/Players",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TennisStatistics.Api.DTOs.CreatePlayerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TennisStatistics.Api.Controllers.PlayersController",
+    "Method": "GetById",
+    "RelativePath": "api/Players/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TennisStatistics.Api.Controllers.StatsController",
+    "Method": "AverageBmi",
+    "RelativePath": "api/Stats/average-bmi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TennisStatistics.Api.Controllers.StatsController",
+    "Method": "BestCountry",
+    "RelativePath": "api/Stats/best-country",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TennisStatistics.Api.Controllers.StatsController",
+    "Method": "MedianHeight",
+    "RelativePath": "api/Stats/median-height",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
