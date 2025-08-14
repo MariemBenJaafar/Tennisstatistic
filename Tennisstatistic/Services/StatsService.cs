@@ -32,10 +32,14 @@ namespace TennisStatistics.Api.Services
         {
             var players = _repo.GetAllPlayers();
 
-            if (!players.Any())
+            var validPlayers = players
+                .Where(p => p.Data != null && p.Data.Height > 0 && p.Data.Weight > 0)
+                .ToList();
+
+            if (!validPlayers.Any())
                 return 0;
 
-            return players.Average(p => (p.Data.Weight / 1000.0 )/ Math.Pow(p.Data.Height / 100.0, 2));
+            return validPlayers.Average(p => (p.Data!.Weight / 1000.0) / Math.Pow(p.Data.Height / 100.0, 2));
         }
 
         public double GetMedianHeight()

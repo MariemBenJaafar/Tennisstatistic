@@ -47,7 +47,7 @@ namespace TennisStatistics.Api.Services
         public PlayerDto AddPlayer(CreatePlayerDto dto)
         {
 
-            var newId = _repo.GetAllPlayers().Max(p => p.Id) + 1;
+            var newId = _repo.GetAllPlayers().Any()? _repo.GetAllPlayers().Max(p => p.Id) + 1 : 1;
             var player = new Player
             {
                 Id = newId,
@@ -80,7 +80,47 @@ namespace TennisStatistics.Api.Services
                 Points = player.Data.Points
             };
         }
+
+        public PlayerDto? UpdatePlayer(int id, UpdatePlayerDto dto)
+        {
+            var player = _repo.GetPlayerById(id);
+            if (player == null) return null;
+
+            // Mise à jour des propriétés
+            player.Firstname = dto.Firstname;
+            player.Lastname = dto.Lastname;
+            player.Country.Code = dto.CountryCode;
+            player.Data.Rank = dto.Rank;
+            player.Data.Points = dto.Points;
+            player.Data.Height = dto.Height;
+            player.Data.Weight = dto.Weight;
+            player.Data.Age = dto.Age;
+
+            // Sauvegarde dans le repository
+            _repo.SaveChanges();
+
+            // Conversion vers DTO pour ne pas exposer l'entité directement
+            return new PlayerDto
+            {
+                Id = player.Id,
+                Fullname = $"{player.Firstname} {player.Lastname}",
+                CountryCode = player.Country.Code,
+                Rank = player.Data.Rank,
+                Points = player.Data.Points
+            };
+        }
+
+        public bool DeletePlayer(int id)
+        {
+            var player = _repo.GetPlayerById(id);
+            if (player == null) return false;
+
+            _repo.DeletePlayer(id);
+            return true;
+        }
+
     }
+
 }
     
        

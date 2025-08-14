@@ -1,0 +1,48 @@
+{
+  "PlayersList": [
+    {
+      "Id": 2,
+      "Firstname": "Raphael",
+      "Lastname": "Nadal",
+      "Shortname": "R.NADAL",
+      "Sex": "M",
+      "Country": {
+        "Picture": "string",
+        "Code": "ESP"
+      },
+      "Picture": "",
+      "Data": {
+        "Rank": 1,
+        "Points": 12000,
+        "Weight": 185,
+        "Height": 185,
+        "Age": 36,
+        "Last": [
+          0
+        ]
+      }
+    },
+    {
+      "Id": 3,
+      "Firstname": "string",
+      "Lastname": "string",
+      "Shortname": "s.STRING",
+      "Sex": "string",
+      "Country": {
+        "Picture": "string",
+        "Code": "string"
+      },
+      "Picture": "",
+      "Data": {
+        "Rank": 0,
+        "Points": 0,
+        "Weight": 0,
+        "Height": 0,
+        "Age": 0,
+        "Last": [
+          0
+        ]
+      }
+    }
+  ]
+}

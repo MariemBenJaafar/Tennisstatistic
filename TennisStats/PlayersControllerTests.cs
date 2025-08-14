@@ -55,7 +55,7 @@ namespace TennisStatsTests
         [Fact]
         public void GetAll_ReturnsOkWithPlayers()
         {
-            var result = _controller.GetAll();
+            var result = _controller.GetAllPlayers();
             var okResult = Assert.IsType<OkObjectResult>(result);
             var players = Assert.IsType<List<PlayerDto>>(okResult.Value);
 
@@ -68,7 +68,7 @@ namespace TennisStatsTests
         [Fact]
         public void GetById_ReturnsPlayer_WhenFound()
         {
-            var result = _controller.GetById(1);
+            var result = _controller.GetPlayerById(1);
             var okResult = Assert.IsType<OkObjectResult>(result);
             var player = Assert.IsType<PlayerDto>(okResult.Value);
 
@@ -83,7 +83,7 @@ namespace TennisStatsTests
         {
             _mockService.Setup(s => s.GetPlayerById(999)).Returns((PlayerDto?)null);
 
-            var result = _controller.GetById(999);
+            var result = _controller.GetPlayerById(999);
             Assert.IsType<NotFoundResult>(result);
         }
 
@@ -102,7 +102,7 @@ namespace TennisStatsTests
 
             _mockService.Setup(s => s.AddPlayer(newPlayerDto)).Returns(createdPlayer);
 
-            var result = _controller.Create(newPlayerDto);
+            var result = _controller.CreatePlayer(newPlayerDto);
             var createdResult = Assert.IsType<CreatedAtActionResult>(result);
             var player = Assert.IsType<PlayerDto>(createdResult.Value);
 

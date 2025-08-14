@@ -7,6 +7,9 @@ namespace TennisStatistics.Api.Repositories
         List<Player> GetAllPlayers();
         Player? GetPlayerById(int id);
         void AddPlayer(Player player);
+        void UpdatePlayer(Player player);
+        void DeletePlayer(int id);
+
         void SaveChanges();
 
     }

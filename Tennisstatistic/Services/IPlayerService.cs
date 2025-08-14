@@ -7,5 +7,8 @@ namespace TennisStatistics.Api.Services
         IEnumerable<PlayerDto> GetAllPlayers();
         PlayerDto? GetPlayerById(int id);
         PlayerDto AddPlayer(CreatePlayerDto dto);
+        PlayerDto UpdatePlayer(int id, UpdatePlayerDto dto);
+        bool DeletePlayer(int id);
+
     }
 }

@@ -64,6 +64,51 @@ namespace TennisStatistics.Api.Repositories
             _players.Add(player);
         }
 
+        public void UpdatePlayer(Player player)
+        {
+            try
+            {
+                var index = _players.FindIndex(p => p.Id == player.Id);
+                if (index >= 0)
+                {
+                    _players[index] = player;
+                    SaveChanges();
+                }
+                else
+                {
+                    throw new KeyNotFoundException($"Joueur avec Id {player.Id} non trouvé.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erreur lors de la mise à jour du joueur: {ex.Message}");
+                throw;
+            }
+
+        }
+
+        public void DeletePlayer(int id)
+        {
+            try
+            {
+                var player = _players.FirstOrDefault(p => p.Id == id);
+                if (player != null)
+                {
+                    _players.Remove(player);
+                    SaveChanges();
+                }
+                else
+                {
+                    throw new KeyNotFoundException($"Joueur avec Id {id} non trouvé.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erreur lors de la suppression du joueur: {ex.Message}");
+                throw;
+            }
+        }
+
         public void SaveChanges()
         {
             try

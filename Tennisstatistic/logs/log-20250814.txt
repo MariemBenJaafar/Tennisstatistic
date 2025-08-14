@@ -1,0 +1,415 @@
+2025-08-14 19:39:26.640 +02:00 [INF] Now listening on: https://localhost:7199
+2025-08-14 19:39:26.700 +02:00 [INF] Now listening on: http://localhost:5256
+2025-08-14 19:39:26.825 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-14 19:39:26.828 +02:00 [INF] Hosting environment: Development
+2025-08-14 19:39:26.830 +02:00 [INF] Content root path: C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic
+2025-08-14 19:39:27.986 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-08-14 19:39:27.986 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-14 19:39:28.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 58.5459ms
+2025-08-14 19:39:28.106 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.9218ms
+2025-08-14 19:39:28.293 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-08-14 19:39:28.395 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 102.459ms
+2025-08-14 19:39:47.871 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players - null null
+2025-08-14 19:39:47.900 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAll (TennisStatistics.Api)'
+2025-08-14 19:39:47.925 +02:00 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 19:39:47.945 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TennisStatistics.Api.DTOs.PlayerDto, TennisStatistics.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-14 19:39:47.959 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetAll (TennisStatistics.Api) in 26.6782ms
+2025-08-14 19:39:47.961 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAll (TennisStatistics.Api)'
+2025-08-14 19:39:47.964 +02:00 [INF] HTTP GET /api/Players responded 200 in 65.0124 ms
+2025-08-14 19:39:47.967 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players - 200 null application/json; charset=utf-8 96.9258ms
+2025-08-14 21:06:35.228 +02:00 [INF] Now listening on: https://localhost:7199
+2025-08-14 21:06:35.418 +02:00 [INF] Now listening on: http://localhost:5256
+2025-08-14 21:06:35.623 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-14 21:06:35.651 +02:00 [INF] Hosting environment: Development
+2025-08-14 21:06:35.652 +02:00 [INF] Content root path: C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic
+2025-08-14 21:06:36.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-08-14 21:06:36.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-14 21:06:36.897 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 82.8122ms
+2025-08-14 21:06:37.006 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 193.6614ms
+2025-08-14 21:06:37.055 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-08-14 21:06:37.130 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.5967ms
+2025-08-14 21:08:42.166 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players - null null
+2025-08-14 21:08:42.203 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAll (TennisStatistics.Api)'
+2025-08-14 21:08:42.231 +02:00 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:08:42.247 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TennisStatistics.Api.DTOs.PlayerDto, TennisStatistics.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-14 21:08:42.258 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetAll (TennisStatistics.Api) in 20.4892ms
+2025-08-14 21:08:42.261 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAll (TennisStatistics.Api)'
+2025-08-14 21:08:42.265 +02:00 [INF] HTTP GET /api/Players responded 200 in 62.6461 ms
+2025-08-14 21:08:42.268 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players - 200 null application/json; charset=utf-8 102.2926ms
+2025-08-14 21:09:15.447 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7199/api/Players - application/json 238
+2025-08-14 21:09:15.458 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.Create (TennisStatistics.Api)'
+2025-08-14 21:09:15.465 +02:00 [INF] Route matched with {action = "Create", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(TennisStatistics.Api.DTOs.CreatePlayerDto) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:10:17.881 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.Create (TennisStatistics.Api) in 62411.3186ms
+2025-08-14 21:10:17.920 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players/52 - null null
+2025-08-14 21:10:17.943 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players/52 - null null
+2025-08-14 21:10:17.943 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7199/api/Players - application/json 238
+2025-08-14 21:10:17.982 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.Create (TennisStatistics.Api)'
+2025-08-14 21:10:17.983 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetById (TennisStatistics.Api)'
+2025-08-14 21:10:17.986 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetById (TennisStatistics.Api)'
+2025-08-14 21:10:17.989 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.Create (TennisStatistics.Api)'
+2025-08-14 21:10:17.990 +02:00 [ERR] HTTP POST /api/Players responded 500 in 62532.2454 ms
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.MaxInteger[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at TennisStatistics.Api.Services.PlayerService.AddPlayer(CreatePlayerDto dto) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Services\PlayerService.cs:line 50
+   at TennisStatistics.Api.Controllers.PlayersController.Create(CreatePlayerDto dto) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Controllers\PlayersController.cs:line 57
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-08-14 21:10:17.997 +02:00 [INF] Route matched with {action = "GetById", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:10:17.997 +02:00 [INF] Route matched with {action = "GetById", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:10:17.996 +02:00 [INF] Route matched with {action = "Create", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(TennisStatistics.Api.DTOs.CreatePlayerDto) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:10:18.612 +02:00 [ERR] Unhandled exception
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.MaxInteger[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at TennisStatistics.Api.Services.PlayerService.AddPlayer(CreatePlayerDto dto) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Services\PlayerService.cs:line 50
+   at TennisStatistics.Api.Controllers.PlayersController.Create(CreatePlayerDto dto) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Controllers\PlayersController.cs:line 57
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at TennisStatistics.Api.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Middleware\ExceptionHandlingMiddleware.cs:line 21
+2025-08-14 21:10:27.364 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.Create (TennisStatistics.Api) in 8747.6542ms
+2025-08-14 21:10:27.365 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-08-14 21:10:27.365 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-08-14 21:10:27.371 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.Create (TennisStatistics.Api)'
+2025-08-14 21:10:27.377 +02:00 [ERR] HTTP POST /api/Players responded 500 in 9387.8792 ms
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.MaxInteger[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at TennisStatistics.Api.Services.PlayerService.AddPlayer(CreatePlayerDto dto) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Services\PlayerService.cs:line 50
+   at TennisStatistics.Api.Controllers.PlayersController.Create(CreatePlayerDto dto) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Controllers\PlayersController.cs:line 57
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-08-14 21:10:27.385 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7199/api/Players - 499 null application/json; charset=utf-8 71938.4544ms
+2025-08-14 21:10:27.457 +02:00 [ERR] Unhandled exception
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.MaxInteger[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at TennisStatistics.Api.Services.PlayerService.AddPlayer(CreatePlayerDto dto) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Services\PlayerService.cs:line 50
+   at TennisStatistics.Api.Controllers.PlayersController.Create(CreatePlayerDto dto) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Controllers\PlayersController.cs:line 57
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at TennisStatistics.Api.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Middleware\ExceptionHandlingMiddleware.cs:line 21
+2025-08-14 21:10:27.465 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7199/api/Players - 500 null application/json; charset=utf-8 9522.3159ms
+2025-08-14 21:10:27.477 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetById (TennisStatistics.Api) in 8862.9241ms
+2025-08-14 21:10:27.478 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetById (TennisStatistics.Api) in 8865.8786ms
+2025-08-14 21:10:27.480 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetById (TennisStatistics.Api)'
+2025-08-14 21:10:27.481 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetById (TennisStatistics.Api)'
+2025-08-14 21:10:27.482 +02:00 [INF] HTTP GET /api/Players/52 responded 404 in 9496.5085 ms
+2025-08-14 21:10:27.484 +02:00 [INF] HTTP GET /api/Players/52 responded 404 in 9501.0738 ms
+2025-08-14 21:10:27.486 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players/52 - 404 null application/problem+json; charset=utf-8 9543.4818ms
+2025-08-14 21:10:27.487 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players/52 - 499 null application/problem+json; charset=utf-8 9567.8421ms
+2025-08-14 21:19:27.675 +02:00 [INF] Now listening on: https://localhost:7199
+2025-08-14 21:19:27.747 +02:00 [INF] Now listening on: http://localhost:5256
+2025-08-14 21:19:27.857 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-14 21:19:27.860 +02:00 [INF] Hosting environment: Development
+2025-08-14 21:19:27.861 +02:00 [INF] Content root path: C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic
+2025-08-14 21:19:28.335 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-14 21:19:28.335 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-08-14 21:19:28.392 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 66.6515ms
+2025-08-14 21:19:28.519 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 195.3309ms
+2025-08-14 21:19:28.605 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-08-14 21:19:28.680 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.5199ms
+2025-08-14 21:19:38.439 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players - null null
+2025-08-14 21:19:38.468 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAll (TennisStatistics.Api)'
+2025-08-14 21:19:38.494 +02:00 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:19:38.513 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TennisStatistics.Api.DTOs.PlayerDto, TennisStatistics.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-14 21:19:38.526 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetAll (TennisStatistics.Api) in 25.8694ms
+2025-08-14 21:19:38.528 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAll (TennisStatistics.Api)'
+2025-08-14 21:19:38.531 +02:00 [INF] HTTP GET /api/Players responded 200 in 64.7885 ms
+2025-08-14 21:19:38.535 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players - 200 null application/json; charset=utf-8 97.0873ms
+2025-08-14 21:20:08.111 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7199/api/Players - application/json 238
+2025-08-14 21:20:08.117 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.Create (TennisStatistics.Api)'
+2025-08-14 21:20:08.128 +02:00 [INF] Route matched with {action = "Create", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(TennisStatistics.Api.DTOs.CreatePlayerDto) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:39:41.545 +02:00 [INF] Now listening on: https://localhost:7199
+2025-08-14 21:39:41.594 +02:00 [INF] Now listening on: http://localhost:5256
+2025-08-14 21:39:41.691 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-14 21:39:41.693 +02:00 [INF] Hosting environment: Development
+2025-08-14 21:39:41.695 +02:00 [INF] Content root path: C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic
+2025-08-14 21:39:42.369 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-14 21:39:42.369 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-08-14 21:39:42.416 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 56.0444ms
+2025-08-14 21:39:42.512 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 154.8343ms
+2025-08-14 21:39:42.579 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-08-14 21:39:42.644 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.8355ms
+2025-08-14 21:39:51.551 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7199/api/Players - application/json 238
+2025-08-14 21:39:51.582 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api)'
+2025-08-14 21:39:51.618 +02:00 [INF] Route matched with {action = "CreatePlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePlayer(TennisStatistics.Api.DTOs.CreatePlayerDto) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:39:51.698 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'TennisStatistics.Api.DTOs.PlayerDto'.
+2025-08-14 21:39:51.726 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api) in 101.2963ms
+2025-08-14 21:39:51.729 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api)'
+2025-08-14 21:39:51.732 +02:00 [INF] HTTP POST /api/Players responded 201 in 150.5993 ms
+2025-08-14 21:39:51.735 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7199/api/Players - 201 null application/json; charset=utf-8 184.5713ms
+2025-08-14 21:40:19.536 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7199/api/Players - application/json 229
+2025-08-14 21:40:19.549 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api)'
+2025-08-14 21:40:19.552 +02:00 [INF] Route matched with {action = "CreatePlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePlayer(TennisStatistics.Api.DTOs.CreatePlayerDto) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:40:19.574 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'TennisStatistics.Api.DTOs.PlayerDto'.
+2025-08-14 21:40:19.578 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api) in 22.7839ms
+2025-08-14 21:40:19.585 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api)'
+2025-08-14 21:40:19.588 +02:00 [INF] HTTP POST /api/Players responded 201 in 38.3847 ms
+2025-08-14 21:40:19.591 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7199/api/Players - 201 null application/json; charset=utf-8 55.7592ms
+2025-08-14 21:40:32.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players/2 - null null
+2025-08-14 21:40:32.037 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api)'
+2025-08-14 21:40:32.042 +02:00 [INF] Route matched with {action = "GetPlayerById", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPlayerById(Int32) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:40:32.049 +02:00 [INF] Executing OkObjectResult, writing value of type 'TennisStatistics.Api.DTOs.PlayerDto'.
+2025-08-14 21:40:32.051 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api) in 6.1439ms
+2025-08-14 21:40:32.054 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api)'
+2025-08-14 21:40:32.055 +02:00 [INF] HTTP GET /api/Players/2 responded 200 in 17.7521 ms
+2025-08-14 21:40:32.057 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players/2 - 200 null application/json; charset=utf-8 24.5307ms
+2025-08-14 21:40:44.542 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Stats/best-country - null null
+2025-08-14 21:40:44.545 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.StatsController.BestCountry (TennisStatistics.Api)'
+2025-08-14 21:40:44.548 +02:00 [INF] Route matched with {action = "BestCountry", controller = "Stats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult BestCountry() on controller TennisStatistics.Api.Controllers.StatsController (TennisStatistics.Api).
+2025-08-14 21:40:44.559 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-14 21:40:44.565 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.StatsController.BestCountry (TennisStatistics.Api) in 14.203ms
+2025-08-14 21:40:44.566 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.StatsController.BestCountry (TennisStatistics.Api)'
+2025-08-14 21:40:44.568 +02:00 [INF] HTTP GET /api/Stats/best-country responded 200 in 22.3183 ms
+2025-08-14 21:40:44.569 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Stats/best-country - 200 null application/json; charset=utf-8 27.8917ms
+2025-08-14 21:41:21.104 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Stats/average-imc - null null
+2025-08-14 21:41:21.115 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.StatsController.AverageIMC (TennisStatistics.Api)'
+2025-08-14 21:41:21.117 +02:00 [INF] Route matched with {action = "AverageIMC", controller = "Stats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AverageIMC() on controller TennisStatistics.Api.Controllers.StatsController (TennisStatistics.Api).
+2025-08-14 21:41:21.121 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-14 21:41:21.137 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.StatsController.AverageIMC (TennisStatistics.Api) in 17.4097ms
+2025-08-14 21:41:21.142 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.StatsController.AverageIMC (TennisStatistics.Api)'
+2025-08-14 21:41:21.144 +02:00 [ERR] HTTP GET /api/Stats/average-imc responded 500 in 29.3917 ms
+System.ArgumentException: .NET number values such as positive and negative infinity cannot be written as valid JSON. To make it work when using 'JsonSerializer', consider specifying 'JsonNumberHandling.AllowNamedFloatingPointLiterals' (see https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonnumberhandling).
+   at System.Text.Json.ThrowHelper.ThrowArgumentException_ValueNotSupported()
+   at System.Text.Json.Utf8JsonWriter.WriteNumberValue(Double value)
+   at System.Text.Json.Serialization.Converters.DoubleConverter.WriteNumberWithCustomHandling(Utf8JsonWriter writer, Double value, JsonNumberHandling handling)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-08-14 21:41:21.291 +02:00 [ERR] Unhandled exception
+System.ArgumentException: .NET number values such as positive and negative infinity cannot be written as valid JSON. To make it work when using 'JsonSerializer', consider specifying 'JsonNumberHandling.AllowNamedFloatingPointLiterals' (see https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonnumberhandling).
+   at System.Text.Json.ThrowHelper.ThrowArgumentException_ValueNotSupported()
+   at System.Text.Json.Utf8JsonWriter.WriteNumberValue(Double value)
+   at System.Text.Json.Serialization.Converters.DoubleConverter.WriteNumberWithCustomHandling(Utf8JsonWriter writer, Double value, JsonNumberHandling handling)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at TennisStatistics.Api.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic\Middleware\ExceptionHandlingMiddleware.cs:line 21
+2025-08-14 21:41:21.419 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Stats/average-imc - 500 null application/json; charset=utf-8 315.5674ms
+2025-08-14 21:42:22.857 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Stats/median-height - null null
+2025-08-14 21:42:22.868 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.StatsController.MedianHeight (TennisStatistics.Api)'
+2025-08-14 21:42:22.871 +02:00 [INF] Route matched with {action = "MedianHeight", controller = "Stats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MedianHeight() on controller TennisStatistics.Api.Controllers.StatsController (TennisStatistics.Api).
+2025-08-14 21:42:22.878 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-14 21:42:22.882 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.StatsController.MedianHeight (TennisStatistics.Api) in 7.895ms
+2025-08-14 21:42:22.885 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.StatsController.MedianHeight (TennisStatistics.Api)'
+2025-08-14 21:42:22.886 +02:00 [INF] HTTP GET /api/Stats/median-height responded 200 in 17.5669 ms
+2025-08-14 21:42:22.889 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Stats/median-height - 200 null application/json; charset=utf-8 31.9951ms
+2025-08-14 21:49:32.632 +02:00 [INF] Now listening on: https://localhost:7199
+2025-08-14 21:49:32.688 +02:00 [INF] Now listening on: http://localhost:5256
+2025-08-14 21:49:32.816 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-14 21:49:32.818 +02:00 [INF] Hosting environment: Development
+2025-08-14 21:49:32.819 +02:00 [INF] Content root path: C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic
+2025-08-14 21:49:33.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-08-14 21:49:33.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-14 21:49:34.017 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 57.1242ms
+2025-08-14 21:49:34.113 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 156.2631ms
+2025-08-14 21:49:34.189 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-08-14 21:49:34.260 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.1329ms
+2025-08-14 21:49:42.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players - null null
+2025-08-14 21:49:42.142 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAllPlayers (TennisStatistics.Api)'
+2025-08-14 21:49:42.173 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:49:42.227 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TennisStatistics.Api.DTOs.PlayerDto, TennisStatistics.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-14 21:49:42.237 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetAllPlayers (TennisStatistics.Api) in 57.3951ms
+2025-08-14 21:49:42.240 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAllPlayers (TennisStatistics.Api)'
+2025-08-14 21:49:42.242 +02:00 [INF] HTTP GET /api/Players responded 200 in 102.4193 ms
+2025-08-14 21:49:42.246 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players - 200 null application/json; charset=utf-8 133.6034ms
+2025-08-14 21:49:56.691 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Stats/average-imc - null null
+2025-08-14 21:49:56.696 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.StatsController.AverageIMC (TennisStatistics.Api)'
+2025-08-14 21:49:56.700 +02:00 [INF] Route matched with {action = "AverageIMC", controller = "Stats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AverageIMC() on controller TennisStatistics.Api.Controllers.StatsController (TennisStatistics.Api).
+2025-08-14 21:49:56.709 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-14 21:49:56.716 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.StatsController.AverageIMC (TennisStatistics.Api) in 13.8655ms
+2025-08-14 21:49:56.719 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.StatsController.AverageIMC (TennisStatistics.Api)'
+2025-08-14 21:49:56.720 +02:00 [INF] HTTP GET /api/Stats/average-imc responded 200 in 24.1153 ms
+2025-08-14 21:49:56.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Stats/average-imc - 200 null application/json; charset=utf-8 31.7014ms
+2025-08-14 21:50:08.590 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Stats/best-country - null null
+2025-08-14 21:50:08.595 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.StatsController.BestCountry (TennisStatistics.Api)'
+2025-08-14 21:50:08.600 +02:00 [INF] Route matched with {action = "BestCountry", controller = "Stats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult BestCountry() on controller TennisStatistics.Api.Controllers.StatsController (TennisStatistics.Api).
+2025-08-14 21:50:08.605 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-14 21:50:08.611 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.StatsController.BestCountry (TennisStatistics.Api) in 9.0756ms
+2025-08-14 21:50:08.614 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.StatsController.BestCountry (TennisStatistics.Api)'
+2025-08-14 21:50:08.616 +02:00 [INF] HTTP GET /api/Stats/best-country responded 200 in 21.0511 ms
+2025-08-14 21:50:08.618 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Stats/best-country - 200 null application/json; charset=utf-8 28.2997ms
+2025-08-14 21:50:18.959 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7199/api/Players - application/json 238
+2025-08-14 21:50:18.963 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api)'
+2025-08-14 21:50:18.971 +02:00 [INF] Route matched with {action = "CreatePlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePlayer(TennisStatistics.Api.DTOs.CreatePlayerDto) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:50:19.025 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'TennisStatistics.Api.DTOs.PlayerDto'.
+2025-08-14 21:50:19.048 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api) in 75.2385ms
+2025-08-14 21:50:19.051 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api)'
+2025-08-14 21:50:19.053 +02:00 [INF] HTTP POST /api/Players responded 201 in 89.8656 ms
+2025-08-14 21:50:19.056 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7199/api/Players - 201 null application/json; charset=utf-8 96.6316ms
+2025-08-14 21:50:32.812 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players/1 - null null
+2025-08-14 21:50:32.815 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api)'
+2025-08-14 21:50:32.819 +02:00 [INF] Route matched with {action = "GetPlayerById", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPlayerById(Int32) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 21:50:32.825 +02:00 [INF] Executing OkObjectResult, writing value of type 'TennisStatistics.Api.DTOs.PlayerDto'.
+2025-08-14 21:50:32.827 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api) in 5.5457ms
+2025-08-14 21:50:32.828 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api)'
+2025-08-14 21:50:32.829 +02:00 [INF] HTTP GET /api/Players/1 responded 200 in 14.3511 ms
+2025-08-14 21:50:32.831 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players/1 - 200 null application/json; charset=utf-8 20.0452ms
+2025-08-14 21:50:46.134 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Stats/median-height - null null
+2025-08-14 21:50:46.146 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.StatsController.MedianHeight (TennisStatistics.Api)'
+2025-08-14 21:50:46.149 +02:00 [INF] Route matched with {action = "MedianHeight", controller = "Stats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MedianHeight() on controller TennisStatistics.Api.Controllers.StatsController (TennisStatistics.Api).
+2025-08-14 21:50:46.157 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-14 21:50:46.160 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.StatsController.MedianHeight (TennisStatistics.Api) in 7.3232ms
+2025-08-14 21:50:46.163 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.StatsController.MedianHeight (TennisStatistics.Api)'
+2025-08-14 21:50:46.164 +02:00 [INF] HTTP GET /api/Stats/median-height responded 200 in 18.3075 ms
+2025-08-14 21:50:46.166 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Stats/median-height - 200 null application/json; charset=utf-8 33.1685ms
+2025-08-14 23:02:30.205 +02:00 [INF] Now listening on: https://localhost:7199
+2025-08-14 23:02:30.347 +02:00 [INF] Now listening on: http://localhost:5256
+2025-08-14 23:02:30.555 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-14 23:02:30.557 +02:00 [INF] Hosting environment: Development
+2025-08-14 23:02:30.559 +02:00 [INF] Content root path: C:\Users\Mariem\source\repos\TennisStatistic\Tennisstatistic
+2025-08-14 23:02:31.825 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-14 23:02:31.825 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-08-14 23:02:31.912 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 102.7946ms
+2025-08-14 23:02:32.014 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 205.8314ms
+2025-08-14 23:02:32.141 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-08-14 23:02:32.221 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.4272ms
+2025-08-14 23:03:03.769 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players - null null
+2025-08-14 23:03:03.829 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAllPlayers (TennisStatistics.Api)'
+2025-08-14 23:03:03.855 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 23:03:03.895 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TennisStatistics.Api.DTOs.PlayerDto, TennisStatistics.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-14 23:03:03.905 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetAllPlayers (TennisStatistics.Api) in 43.3689ms
+2025-08-14 23:03:03.908 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetAllPlayers (TennisStatistics.Api)'
+2025-08-14 23:03:03.911 +02:00 [INF] HTTP GET /api/Players responded 200 in 83.8279 ms
+2025-08-14 23:03:03.916 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players - 200 null application/json; charset=utf-8 146.7243ms
+2025-08-14 23:03:12.784 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7199/api/Players - application/json 238
+2025-08-14 23:03:12.790 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api)'
+2025-08-14 23:03:12.800 +02:00 [INF] Route matched with {action = "CreatePlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePlayer(TennisStatistics.Api.DTOs.CreatePlayerDto) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 23:03:12.855 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'TennisStatistics.Api.DTOs.PlayerDto'.
+2025-08-14 23:03:12.876 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api) in 73.2633ms
+2025-08-14 23:03:12.879 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.CreatePlayer (TennisStatistics.Api)'
+2025-08-14 23:03:12.881 +02:00 [INF] HTTP POST /api/Players responded 201 in 91.4166 ms
+2025-08-14 23:03:12.884 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7199/api/Players - 201 null application/json; charset=utf-8 100.5897ms
+2025-08-14 23:03:23.383 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7199/api/Players/1 - application/json 148
+2025-08-14 23:03:23.388 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.UpdatePlayer (TennisStatistics.Api)'
+2025-08-14 23:03:23.393 +02:00 [INF] Route matched with {action = "UpdatePlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdatePlayer(Int32, TennisStatistics.Api.DTOs.UpdatePlayerDto) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 23:03:23.407 +02:00 [INF] Executing OkObjectResult, writing value of type 'TennisStatistics.Api.DTOs.PlayerDto'.
+2025-08-14 23:03:23.410 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.UpdatePlayer (TennisStatistics.Api) in 14.9477ms
+2025-08-14 23:03:23.412 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.UpdatePlayer (TennisStatistics.Api)'
+2025-08-14 23:03:23.413 +02:00 [INF] HTTP PUT /api/Players/1 responded 200 in 25.5112 ms
+2025-08-14 23:03:23.415 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7199/api/Players/1 - 200 null application/json; charset=utf-8 32.3751ms
+2025-08-14 23:03:37.828 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7199/api/Players/1 - null null
+2025-08-14 23:03:37.833 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.DeletePlayer (TennisStatistics.Api)'
+2025-08-14 23:03:37.838 +02:00 [INF] Route matched with {action = "DeletePlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeletePlayer(Int32) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 23:03:37.850 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-08-14 23:03:37.851 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.DeletePlayer (TennisStatistics.Api) in 10.8393ms
+2025-08-14 23:03:37.853 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.DeletePlayer (TennisStatistics.Api)'
+2025-08-14 23:03:37.855 +02:00 [INF] HTTP DELETE /api/Players/1 responded 204 in 21.4675 ms
+2025-08-14 23:03:37.857 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7199/api/Players/1 - 204 null null 30.4643ms
+2025-08-14 23:05:23.059 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players/1 - null null
+2025-08-14 23:05:23.074 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api)'
+2025-08-14 23:05:23.076 +02:00 [INF] Route matched with {action = "GetPlayerById", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPlayerById(Int32) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 23:05:23.083 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-08-14 23:05:23.104 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api) in 24.643ms
+2025-08-14 23:05:23.107 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api)'
+2025-08-14 23:05:23.108 +02:00 [INF] HTTP GET /api/Players/1 responded 404 in 34.3149 ms
+2025-08-14 23:05:23.110 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players/1 - 404 null application/problem+json; charset=utf-8 51.0698ms
+2025-08-14 23:05:42.482 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/api/Players/4 - null null
+2025-08-14 23:05:42.485 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api)'
+2025-08-14 23:05:42.487 +02:00 [INF] Route matched with {action = "GetPlayerById", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPlayerById(Int32) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 23:05:42.489 +02:00 [INF] Executing OkObjectResult, writing value of type 'TennisStatistics.Api.DTOs.PlayerDto'.
+2025-08-14 23:05:42.490 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api) in 1.6559ms
+2025-08-14 23:05:42.492 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.GetPlayerById (TennisStatistics.Api)'
+2025-08-14 23:05:42.493 +02:00 [INF] HTTP GET /api/Players/4 responded 200 in 8.1404 ms
+2025-08-14 23:05:42.495 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/api/Players/4 - 200 null application/json; charset=utf-8 13.7919ms
+2025-08-14 23:06:13.008 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7199/api/Players/4 - application/json 148
+2025-08-14 23:06:13.018 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.UpdatePlayer (TennisStatistics.Api)'
+2025-08-14 23:06:13.020 +02:00 [INF] Route matched with {action = "UpdatePlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdatePlayer(Int32, TennisStatistics.Api.DTOs.UpdatePlayerDto) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 23:06:13.026 +02:00 [INF] Executing OkObjectResult, writing value of type 'TennisStatistics.Api.DTOs.PlayerDto'.
+2025-08-14 23:06:13.028 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.UpdatePlayer (TennisStatistics.Api) in 6.0705ms
+2025-08-14 23:06:13.030 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.UpdatePlayer (TennisStatistics.Api)'
+2025-08-14 23:06:13.031 +02:00 [INF] HTTP PUT /api/Players/4 responded 200 in 13.7232 ms
+2025-08-14 23:06:13.034 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7199/api/Players/4 - 200 null application/json; charset=utf-8 28.8846ms
+2025-08-14 23:06:24.148 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7199/api/Players/4 - null null
+2025-08-14 23:06:24.151 +02:00 [INF] Executing endpoint 'TennisStatistics.Api.Controllers.PlayersController.DeletePlayer (TennisStatistics.Api)'
+2025-08-14 23:06:24.152 +02:00 [INF] Route matched with {action = "DeletePlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeletePlayer(Int32) on controller TennisStatistics.Api.Controllers.PlayersController (TennisStatistics.Api).
+2025-08-14 23:06:24.157 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-08-14 23:06:24.158 +02:00 [INF] Executed action TennisStatistics.Api.Controllers.PlayersController.DeletePlayer (TennisStatistics.Api) in 4.3726ms
+2025-08-14 23:06:24.160 +02:00 [INF] Executed endpoint 'TennisStatistics.Api.Controllers.PlayersController.DeletePlayer (TennisStatistics.Api)'
+2025-08-14 23:06:24.161 +02:00 [INF] HTTP DELETE /api/Players/4 responded 204 in 10.7723 ms
+2025-08-14 23:06:24.164 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7199/api/Players/4 - 204 null null 17.2723ms

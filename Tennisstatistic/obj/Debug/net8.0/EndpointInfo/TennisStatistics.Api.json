@@ -10,9 +10,10 @@
         "tags": [
           "Players"
         ],
+        "summary": "Retrieves a list of all players.",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Returns the list of players"
           }
         }
       },
@@ -20,7 +21,9 @@
         "tags": [
           "Players"
         ],
+        "summary": "Creates a new player.",
         "requestBody": {
+          "description": "The data needed to create a new player.",
           "content": {
             "application/json": {
               "schema": {
@@ -42,6 +45,12 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "201": {
+            "description": "Returns the newly created player"
+          },
+          "400": {
+            "description": "If the input data is invalid"
           }
         }
       }
@@ -51,10 +60,12 @@
         "tags": [
           "Players"
         ],
+        "summary": "Get a player by their ID.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "The unique ID of the player.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -64,7 +75,119 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Returns the player"
+          },
+          "404": {
+            "description": "If the player is not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Players"
+        ],
+        "summary": "Met à jour un joueur existant.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID du joueur à mettre à jour.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Données pour la mise à jour.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePlayerDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePlayerDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePlayerDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlayerDto"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Players"
+        ],
+        "summary": "Supprime un joueur existant.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID du joueur à supprimer.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -74,21 +197,23 @@
         "tags": [
           "Stats"
         ],
+        "summary": "Gets the country with the highest win ratio.",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Returns the country with the best win ratio"
           }
         }
       }
     },
-    "/api/Stats/average-bmi": {
+    "/api/Stats/average-imc": {
       "get": {
         "tags": [
           "Stats"
         ],
+        "summary": "Gets the average IMC of all players.",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Returns the average IMC of players"
           }
         }
       }
@@ -98,9 +223,10 @@
         "tags": [
           "Stats"
         ],
+        "summary": "Gets the median height of all players.",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Returns the median height of players"
           }
         }
       }
@@ -167,6 +293,106 @@
               "format": "int32"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlayerDto": {
+        "required": [
+          "countryCode",
+          "fullname"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "countryCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "rank": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "points": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
+      "UpdatePlayerDto": {
+        "required": [
+          "countryCode",
+          "firstname",
+          "lastname"
+        ],
+        "type": "object",
+        "properties": {
+          "firstname": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastname": {
+            "type": "string",
+            "nullable": true
+          },
+          "countryCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "rank": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "points": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "height": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "weight": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

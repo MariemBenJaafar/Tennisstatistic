@@ -59,10 +59,11 @@ namespace TennisStats
         [Fact]
         public void Add_Should_Assign_New_Id_And_Save()
         {
-            var list = MockPlayers(); // simulate in-memory data changing
+            var list = MockPlayers(); 
 
             var mock = new Mock<IPlayerRepository>();
-            mock.Setup(r => r.GetAllPlayers()).Returns(() => list); // use delegate to reflect additions
+            var _service = new PlayerService(mock.Object);
+            mock.Setup(r => r.GetAllPlayers()).Returns(() => list); 
             mock.Setup(r => r.AddPlayer(It.IsAny<Player>()))
                 .Callback<Player>(p => list.Add(p));
             mock.Setup(r => r.SaveChanges());
@@ -89,5 +90,47 @@ namespace TennisStats
             list.Should().Contain(p => p.Id == created.Id);
             mock.Verify(r => r.SaveChanges(), Times.Once);
         }
+
+        [Fact]
+        public void UpdatePlayer_ShouldReturnUpdatedDto_WhenPlayerExists()
+        {
+            var mock = new Mock<IPlayerRepository>();
+            var _service = new PlayerService(mock.Object);
+
+            var player = new Player
+            {
+                Id = 1,
+                Firstname = "Novak",
+                Lastname = "Djokovic",
+                Country = new Country { Code = "SRB" },
+                Data = new PlayerData { Rank = 1, Points = 1000, Height = 188, Weight = 80000, Age = 36 }
+            };
+
+            var dto = new UpdatePlayerDto
+            {
+                Firstname = "Novak",
+                Lastname = "Updated",
+                CountryCode = "SRB",
+                Rank = 2,
+                Points = 1500,
+                Height = 189,
+                Weight = 81000,
+                Age = 37
+            };
+
+            mock.Setup(r => r.GetPlayerById(1)).Returns(player);
+            mock.Setup(r => r.SaveChanges());
+
+            // Act
+            var result = _service.UpdatePlayer(1, dto);
+
+            // Assert
+            Xunit.Assert.NotNull(result);
+            Xunit.Assert.Equal("Novak Updated", result.Fullname);
+            Xunit.Assert.Equal("SRB", result.CountryCode);
+            Xunit.Assert.Equal(2, result.Rank);
+            Xunit.Assert.Equal(1500, result.Points);
+        }
+
     }
 }

@@ -14,23 +14,39 @@ namespace TennisStatistics.Api.Controllers
         {
             _statsService = statsService;
         }
-
+        /// <summary>
+        /// Gets the country with the highest win ratio.
+        /// </summary>
+        /// <returns>The country name with the best win ratio.</returns>
+        /// <response code="200">Returns the country with the best win ratio</response>
         [HttpGet("best-country")]
         public IActionResult BestCountry()
         {
             return Ok(new { country = _statsService.GetCountryWithBestWinRatio() });
         }
 
-        [HttpGet("average-bmi")]
+        /// <summary>
+        /// Gets the average IMC of all players.
+        /// </summary>
+        /// <returns>The average IMC as a double.</returns>
+        /// <response code="200">Returns the average IMC of players</response>
+        [HttpGet("average-imc")]
         public IActionResult AverageIMC()
         {
             return Ok(new { averageIMC = _statsService.GetAverageIMC() });
         }
 
+        /// <summary>
+        /// Gets the median height of all players.
+        /// </summary>
+        /// <returns>The median height in centimeters.</returns>
+        /// <response code="200">Returns the median height of players</response>
         [HttpGet("median-height")]
         public IActionResult MedianHeight()
         {
             return Ok(new { medianHeight = _statsService.GetMedianHeight() });
         }
+
+
     }
 }
