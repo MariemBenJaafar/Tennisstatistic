@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TennisStatistics.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f64841ebd65342815ed7a461cb9bfb8edd8352c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2dea6899f0fc9231f3c1e0c8afc1598b5395d16")]
 [assembly: System.Reflection.AssemblyProductAttribute("TennisStatistics.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TennisStatistics.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

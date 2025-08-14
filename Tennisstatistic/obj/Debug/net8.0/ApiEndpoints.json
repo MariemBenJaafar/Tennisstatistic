@@ -43,7 +43,7 @@
   },
   {
     "ContainingType": "TennisStatistics.Api.Controllers.StatsController",
-    "Method": "AverageBmi",
+    "Method": "AverageIMC",
     "RelativePath": "api/Stats/average-bmi",
     "HttpMethod": "GET",
     "IsController": true,

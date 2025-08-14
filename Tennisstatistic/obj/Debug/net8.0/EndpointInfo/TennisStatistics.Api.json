@@ -110,6 +110,7 @@
     "schemas": {
       "CreatePlayerDto": {
         "required": [
+          "countryCode",
           "firstname",
           "lastname"
         ],
