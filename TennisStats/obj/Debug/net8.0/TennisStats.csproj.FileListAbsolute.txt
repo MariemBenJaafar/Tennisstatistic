@@ -98,3 +98,4 @@ C:\Users\Mariem\source\repos\Tennisstatistic\TennisStats\obj\Debug\net8.0\refint
 C:\Users\Mariem\source\repos\Tennisstatistic\TennisStats\obj\Debug\net8.0\TennisStats.pdb
 C:\Users\Mariem\source\repos\Tennisstatistic\TennisStats\obj\Debug\net8.0\TennisStats.genruntimeconfig.cache
 C:\Users\Mariem\source\repos\Tennisstatistic\TennisStats\obj\Debug\net8.0\ref\TennisStats.dll
+C:\Users\Mariem\source\repos\TennisStatistic\TennisStats\obj\Debug\net8.0\TennisStats.sourcelink.json

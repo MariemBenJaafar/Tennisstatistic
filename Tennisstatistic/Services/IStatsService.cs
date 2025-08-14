@@ -5,7 +5,7 @@ namespace TennisStatistics.Api.Services
     public interface IStatsService
     {
         string GetCountryWithBestWinRatio();
-        double GetAverageBMI();
+        double GetAverageIMC();
         double GetMedianHeight();
     }
 }

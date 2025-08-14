@@ -28,10 +28,14 @@ namespace TennisStatistics.Api.Services
                 .First().Country;
         }
 
-        public double GetAverageBMI()
+        public double GetAverageIMC()
         {
             var players = _repo.GetAllPlayers();
-            return players.Average(p => p.Data.Weight / Math.Pow(p.Data.Height / 100.0, 2));
+
+            if (!players.Any())
+                return 0;
+
+            return players.Average(p => (p.Data.Weight / 1000.0 )/ Math.Pow(p.Data.Height / 100.0, 2));
         }
 
         public double GetMedianHeight()

@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TennisStatistics.api")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("TennisStatistics.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94c68a53acedc080981230c7fa047ef6b97e4e70")]
-[assembly: System.Reflection.AssemblyProductAttribute("TennisStatistics.api")]
-[assembly: System.Reflection.AssemblyTitleAttribute("TennisStatistics.api")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+404f500a22efe6cad1c0075b84371f112d6072ad")]
+[assembly: System.Reflection.AssemblyProductAttribute("TennisStatistics.Api")]
+[assembly: System.Reflection.AssemblyTitleAttribute("TennisStatistics.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Généré par la classe MSBuild WriteCodeFragment.

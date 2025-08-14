@@ -6,7 +6,7 @@
         public required string Lastname { get; set; } 
         public string? Shortname { get; set; } 
         public string? Sex { get; set; } 
-        public string? CountryCode { get; set; } 
+        public required string CountryCode { get; set; } 
         public string? Picture { get; set; } 
         public int Rank { get; set; }
         public int Points { get; set; }
