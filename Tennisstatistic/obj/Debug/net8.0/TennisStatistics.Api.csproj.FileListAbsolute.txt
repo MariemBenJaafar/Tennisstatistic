@@ -50,3 +50,4 @@ C:\Users\Mariem\source\repos\Tennisstatistic\Tennisstatistic\obj\Debug\net8.0\re
 C:\Users\Mariem\source\repos\Tennisstatistic\Tennisstatistic\obj\Debug\net8.0\TennisStatistics.Api.pdb
 C:\Users\Mariem\source\repos\Tennisstatistic\Tennisstatistic\obj\Debug\net8.0\TennisStatistics.Api.genruntimeconfig.cache
 C:\Users\Mariem\source\repos\Tennisstatistic\Tennisstatistic\obj\Debug\net8.0\ref\TennisStatistics.Api.dll
+C:\Users\Mariem\source\repos\Tennisstatistic\Tennisstatistic\obj\Debug\net8.0\TennisStatistics.Api.sourcelink.json
