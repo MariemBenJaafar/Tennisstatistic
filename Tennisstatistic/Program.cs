@@ -3,7 +3,6 @@ using TennisStatistics.Api.Repositories;
 using TennisStatistics.Api.Services;
 using Serilog;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 Log.Logger = new LoggerConfiguration()
@@ -23,15 +22,25 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(xmlPath);
 });
 
+// --- CORS (important pour Render / Swagger) ---
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
 
-// DI
 builder.Services.AddSingleton<IPlayerRepository, JsonPlayerRepository>();
 builder.Services.AddScoped<IPlayerService, PlayerService>();
 builder.Services.AddScoped<IStatsService, StatsService>();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+// --- SWAGGER UI ---
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
@@ -39,11 +48,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// AJOUT DU MIDDLEWARE D'EXCEPTION
+// --- CORS ---
+app.UseCors("AllowAll");
+
+// --- MIDDLEWARES ---
 app.UseMiddleware<ExceptionHandlingMiddleware>();
-app.UseSerilogRequestLogging(); // Log HTTP requests
-app.UseHttpsRedirection();
+app.UseSerilogRequestLogging();
 app.UseAuthorization();
+
+// --- ROUTES ---
 app.MapControllers();
 
 app.Run();
