@@ -22,9 +22,9 @@ namespace TennisStatistics.Api.Controllers
         }
 
         [HttpGet("average-bmi")]
-        public IActionResult AverageBmi()
+        public IActionResult AverageIMC()
         {
-            return Ok(new { averageBMI = _statsService.GetAverageIMC() });
+            return Ok(new { averageIMC = _statsService.GetAverageIMC() });
         }
 
         [HttpGet("median-height")]

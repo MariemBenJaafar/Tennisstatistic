@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc.Testing;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,45 +9,107 @@ using System.Net;
 using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
+using TennisStatistics.Api.Controllers;
+using TennisStatistics.Api.DTOs;
 using TennisStatistics.Api.Models;
+using TennisStatistics.Api.Services;
 
 namespace TennisStatsTests
 {
-    public class PlayersControllerTests : IClassFixture<WebApplicationFactory<Program>>
+    public class PlayersControllerTests
     {
-        private readonly HttpClient _client;
 
-        public PlayersControllerTests(WebApplicationFactory<Program> factory)
+        private readonly PlayersController _controller;
+        private readonly Mock<IPlayerService> _mockService;
+
+        public PlayersControllerTests()
         {
-            _client = factory.CreateClient();
+            _mockService = new Mock<IPlayerService>();
+
+            // Exemple de données simulées avec Country et Data obligatoires
+            _mockService.Setup(s => s.GetAllPlayers()).Returns(new List<PlayerDto>
+        {
+            new PlayerDto
+            {
+                Id = 1,
+                Fullname = "Novak Djokovic",
+                CountryCode = "SRB",
+                Rank = 1,
+                Points = 1000
+
+            }
+        });
+
+            _mockService.Setup(s => s.GetPlayerById(1)).Returns(new PlayerDto
+            {
+                Id = 1,
+                Fullname = "Novak Djokovic",
+                CountryCode = "SRB",
+                Rank = 1,
+                Points = 1000
+            });
+
+            _controller = new PlayersController(_mockService.Object);
         }
 
         [Fact]
-        public async Task GetAll_ReturnsPlayers()
+        public void GetAll_ReturnsOkWithPlayers()
         {
-            var response = await _client.GetAsync("/api/players");
-            response.EnsureSuccessStatusCode();
+            var result = _controller.GetAll();
+            var okResult = Assert.IsType<OkObjectResult>(result);
+            var players = Assert.IsType<List<PlayerDto>>(okResult.Value);
 
-            var players = await response.Content.ReadFromJsonAsync<List<Player>>();
-            Assert.NotNull(players);
-            Assert.True(players.Count > 0);
+            Assert.Single(players);
+            Assert.Equal("Novak Djokovic", players[0].Fullname);
+            Assert.Equal("SRB", players[0].CountryCode);
+            Assert.Equal(1000,players[0].Points);
         }
 
         [Fact]
-        public async Task GetById_ReturnsPlayerOrNotFound()
+        public void GetById_ReturnsPlayer_WhenFound()
         {
-            var response = await _client.GetAsync("/api/players/52");
+            var result = _controller.GetById(1);
+            var okResult = Assert.IsType<OkObjectResult>(result);
+            var player = Assert.IsType<PlayerDto>(okResult.Value);
 
-            if (response.StatusCode == HttpStatusCode.NotFound)
+            Assert.Equal(1, player.Id);
+            Assert.Equal("Novak Djokovic", player.Fullname);
+            Assert.Equal(1000,player.Points);
+            Assert.NotNull(player.CountryCode);
+        }
+
+        [Fact]
+        public void GetById_ReturnsNotFound_WhenMissing()
+        {
+            _mockService.Setup(s => s.GetPlayerById(999)).Returns((PlayerDto?)null);
+
+            var result = _controller.GetById(999);
+            Assert.IsType<NotFoundResult>(result);
+        }
+
+        [Fact]
+        public void Create_ReturnsCreatedPlayer()
+        {
+            var newPlayerDto = new CreatePlayerDto { Firstname = "Rafael", Lastname = "Nadal", CountryCode = "ESP"  };
+            var createdPlayer = new PlayerDto
             {
-                Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
-            }
-            else
-            {
-                var player = await response.Content.ReadFromJsonAsync<Player>();
-                Assert.NotNull(player);
-                Assert.Equal(52, player.Id);
-            }
+                Id = 2,
+                Fullname = "Rafael Nadal",
+                CountryCode = "ESP",
+                Rank = 2,
+                Points = 900
+            };
+
+            _mockService.Setup(s => s.AddPlayer(newPlayerDto)).Returns(createdPlayer);
+
+            var result = _controller.Create(newPlayerDto);
+            var createdResult = Assert.IsType<CreatedAtActionResult>(result);
+            var player = Assert.IsType<PlayerDto>(createdResult.Value);
+
+            Assert.Equal("Rafael Nadal", player.Fullname);
+            Assert.Equal(2, player.Id);
+            Assert.Equal(900,player.Points);
+            Assert.Equal("ESP", player.CountryCode);
         }
     }
 }

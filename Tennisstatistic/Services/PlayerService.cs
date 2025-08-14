@@ -54,8 +54,8 @@ namespace TennisStatistics.Api.Services
                 Firstname = dto.Firstname,
                 Lastname = dto.Lastname,
                 Shortname = $"{dto.Firstname[0]}.{dto.Lastname[..3].ToUpper()}",
-                Sex = "M", 
-                Country = new Country { Code = dto.CountryCode ?? string.Empty, Picture = "" },
+                Sex = dto.Sex, 
+                Country = new Country { Code = dto.CountryCode ?? string.Empty, Picture = dto.Picture },
                 Picture = "",
                 Data = new PlayerData
                 {
