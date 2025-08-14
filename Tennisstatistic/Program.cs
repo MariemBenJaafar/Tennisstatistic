@@ -1,3 +1,4 @@
+using TennisStatistics.Api.Middleware;
 using TennisStatistics.Api.Repositories;
 using TennisStatistics.Api.Services;
 
@@ -22,5 +23,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// AJOUT DU MIDDLEWARE D'EXCEPTION
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 app.MapControllers();
+
 app.Run();

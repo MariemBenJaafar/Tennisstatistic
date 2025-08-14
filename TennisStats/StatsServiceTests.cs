@@ -46,7 +46,7 @@ namespace TennisStatsTests
             var bmi = stats.GetAverageIMC();
 
 
-            // Average BMI = (80000/1000)/(188/100)^2 + (85000/1000)/(185/100)^2 + (72000/1000)/(175/100)^2 + (74000/1000)/(185/100)^2 (IMC sould be= 23.15)
+            // Average IMC = (80000/1000)/(188/100)^2 + (85000/1000)/(185/100)^2 + (72000/1000)/(175/100)^2 + (74000/1000)/(185/100)^2 (IMC sould be= 23.15)
             bmi.Should().BeGreaterThan(23).And.BeLessThan(24); 
         }
 
