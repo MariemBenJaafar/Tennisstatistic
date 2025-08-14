@@ -42,7 +42,8 @@ app.UseHttpsRedirection();
 // AJOUT DU MIDDLEWARE D'EXCEPTION
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSerilogRequestLogging(); // Log HTTP requests
-
+app.UseHttpsRedirection();
+app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
