@@ -1,28 +1,24 @@
 
 # Étape 1 : Build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
 
-# Forcer le dossier Linux pour NuGet
-ENV NUGET_PACKAGES=/root/.nuget/packages
+WORKDIR /app
 
-# Copier le fichier csproj
-COPY ["Tennisstatistic/TennisStatistics.Api.csproj", "Tennisstatistic/"]
+# Copier les fichiers csproj et restaurer les dépendances
+COPY Tennisstatistic/*.csproj ./Tennisstatistic/
+RUN dotnet restore Tennisstatistic/TennisStatistics.Api.csproj
 
-# Restaurer les dépendances
-RUN dotnet restore "Tennisstatistic/TennisStatistics.Api.csproj"
-
-# Copier tout le code
+# Copier le reste des fichiers
 COPY . .
 
-# Publier le projet
-WORKDIR "/src/Tennisstatistic"
-RUN dotnet publish "TennisStatistics.Api.csproj" -c Release -o /app/publish
+# Publier l'application en mode Release
+RUN dotnet publish Tennisstatistic/TennisStatistics.Api.csproj -c Release -o out
 
 # Étape 2 : Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
-COPY --from=build /app/publish .
+COPY --from=build /app/out ./
 
 EXPOSE 5000
+
 ENTRYPOINT ["dotnet", "TennisStatistics.Api.dll"]
