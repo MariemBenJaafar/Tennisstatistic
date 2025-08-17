@@ -16,7 +16,10 @@
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="coverlet.collector" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="FluentAssertions" Version="8.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.19" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.6" />
@@ -25,7 +28,6 @@
     <PackageReference Include="MockQueryable.Core" Version="8.0.0" />
     <PackageReference Include="Moq" Version="4.20.72" />
     <PackageReference Include="xunit" Version="2.9.3" />
-    <PackageReference Include="Xunit.Microsoft.VisualStudio.TestTools.UnitTesting" Version="1.0.0-beta-1011" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.1.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

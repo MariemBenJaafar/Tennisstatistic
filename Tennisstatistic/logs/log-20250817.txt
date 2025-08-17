@@ -14,3 +14,9 @@
 2025-08-17 14:01:05.482 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-08-17 14:01:05.485 +02:00 [INF] Hosting environment: Development
 2025-08-17 14:01:05.489 +02:00 [INF] Content root path: C:\Users\Mariem\source\repos\MariemBenJaafar\Tennisstatistic\Tennisstatistic
+2025-08-17 14:01:06.501 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_vs/browserLink - null null
+2025-08-17 14:01:06.501 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-17 14:01:06.562 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 83.1051ms
+2025-08-17 14:01:06.786 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 308.5118ms
+2025-08-17 14:01:06.926 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
+2025-08-17 14:01:07.031 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.6072ms

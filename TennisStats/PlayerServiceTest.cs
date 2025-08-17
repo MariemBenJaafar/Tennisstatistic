@@ -1,7 +1,6 @@
 ﻿using FluentAssertions;
 using Microsoft.Data.Tools.Schema.Sql.UnitTesting;
 using Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System;
 using System.Collections.Generic;
