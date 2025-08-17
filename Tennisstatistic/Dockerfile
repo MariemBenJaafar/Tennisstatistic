@@ -5,7 +5,7 @@ WORKDIR /src
 
 # Copier le fichier csproj et restaurer les dépendances
 COPY ["TennisStatistic/Tennisstatistic/TennisStatistics.Api.csproj", "TennisStatistic/"]
-RUN dotnet restore "TennisStatistic/TennisStatistics.Api.csproj"
+RUN dotnet restore "TennisStatistic/Tennisstatistic/TennisStatistics.Api.csproj"
 
 # Copier le reste du projet et publier
 COPY . .
