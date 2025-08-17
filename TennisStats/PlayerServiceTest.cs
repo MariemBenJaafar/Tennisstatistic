@@ -1,12 +1,6 @@
 ﻿using FluentAssertions;
-using Microsoft.Data.Tools.Schema.Sql.UnitTesting;
-using Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions;
 using Moq;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Data.Common;
-using System.Text;
 using TennisStatistics.Api.DTOs;
 using TennisStatistics.Api.Models;
 using TennisStatistics.Api.Repositories;

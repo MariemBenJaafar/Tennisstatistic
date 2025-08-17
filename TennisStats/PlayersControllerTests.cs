@@ -1,17 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http.Json;
-using System.Text;
-using System.Threading.Tasks;
 using TennisStatistics.Api.Controllers;
 using TennisStatistics.Api.DTOs;
-using TennisStatistics.Api.Models;
 using TennisStatistics.Api.Services;
 
 namespace TennisStatsTests

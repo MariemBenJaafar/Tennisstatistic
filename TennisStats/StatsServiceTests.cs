@@ -1,10 +1,5 @@
 ﻿using FluentAssertions;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TennisStatistics.Api.Models;
 using TennisStatistics.Api.Repositories;
 using TennisStatistics.Api.Services;
