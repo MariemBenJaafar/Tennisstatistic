@@ -65,5 +65,10 @@ app.MapGet("/", () => Results.Content(@"
       <p>Accédez à la documentation <a href='/swagger'>ici</a>.</p>
     </body>
   </html>", "text/html"));
+app.Use(async (context, next) =>
+{
+    context.Response.Headers.Append("Content-Type", "text/html; charset=utf-8");
+    await next();
+});
 
 app.Run();

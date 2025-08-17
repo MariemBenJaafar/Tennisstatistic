@@ -20,9 +20,15 @@ namespace TennisStatistics.Api.Controllers
         /// <returns>The country name with the best win ratio.</returns>
         /// <response code="200">Returns the country with the best win ratio</response>
         [HttpGet("best-country")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult BestCountry()
         {
-            return Ok(new { country = _statsService.GetCountryWithBestWinRatio() });
+            var result = _statsService.GetCountryWithBestWinRatio();
+            if (string.IsNullOrWhiteSpace(result))
+                return NotFound(new { message = "No data available to compute win ratio." });
+
+            return Ok(new { bestCountry = result });
         }
 
         /// <summary>
