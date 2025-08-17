@@ -58,5 +58,12 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSerilogRequestLogging();
 app.UseAuthorization();
 app.MapControllers();
+app.MapGet("/", () => Results.Content(@"
+  <html>
+    <body>
+      <h1>Bienvenue sur TennisStatistic API</h1>
+      <p>Accédez à la documentation <a href='/swagger'>ici</a>.</p>
+    </body>
+  </html>", "text/html"));
 
 app.Run();
