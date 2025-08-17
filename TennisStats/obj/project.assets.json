@@ -10121,11 +10121,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mariem\\source\\repos\\TennisStatistic\\TennisStats\\TennisStatsTests.csproj",
+      "projectUniqueName": "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\TennisStats\\TennisStatsTests.csproj",
       "projectName": "TennisStatsTests",
-      "projectPath": "C:\\Users\\Mariem\\source\\repos\\TennisStatistic\\TennisStats\\TennisStatsTests.csproj",
+      "projectPath": "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\TennisStats\\TennisStatsTests.csproj",
       "packagesPath": "C:\\Users\\Mariem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mariem\\source\\repos\\TennisStatistic\\TennisStats\\obj\\",
+      "outputPath": "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\TennisStats\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10147,8 +10147,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Mariem\\source\\repos\\TennisStatistic\\Tennisstatistic\\TennisStatistics.Api.csproj": {
-              "projectPath": "C:\\Users\\Mariem\\source\\repos\\TennisStatistic\\Tennisstatistic\\TennisStatistics.Api.csproj"
+            "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj": {
+              "projectPath": "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj"
             }
           }
         }

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TennisStatistics.Api</name>
+    </assembly>
+    <members>
+        <member name="M:TennisStatistics.Api.Controllers.PlayersController.GetAllPlayers">
+            <summary>
+            Retrieves a list of all players.
+            </summary>
+            <returns>A list of players.</returns>
+            <response code="200">Returns the list of players</response>
+        </member>
+        <member name="M:TennisStatistics.Api.Controllers.PlayersController.GetPlayerById(System.Int32)">
+            <summary>
+            Get a player by their ID.
+            </summary>
+            <param name="id">The unique ID of the player.</param>
+            <returns>The player data if found; otherwise, a 404 Not Found.</returns>
+            <response code="200">Returns the player</response>
+            <response code="404">If the player is not found</response>
+        </member>
+        <member name="M:TennisStatistics.Api.Controllers.PlayersController.CreatePlayer(TennisStatistics.Api.DTOs.CreatePlayerDto)">
+            <summary>
+            Creates a new player.
+            </summary>
+            <param name="dto">The data needed to create a new player.</param>
+            <returns>The newly created player with a 201 status and location header.</returns>
+            <response code="201">Returns the newly created player</response>
+            <response code="400">If the input data is invalid</response>
+        </member>
+        <member name="M:TennisStatistics.Api.Controllers.PlayersController.UpdatePlayer(System.Int32,TennisStatistics.Api.DTOs.UpdatePlayerDto)">
+            <summary>
+            Met à jour un joueur existant.
+            </summary>
+            <param name="id">ID du joueur à mettre à jour.</param>
+            <param name="dto">Données pour la mise à jour.</param>
+            <returns>Le joueur mis à jour ou 404 si non trouvé.</returns>
+        </member>
+        <member name="M:TennisStatistics.Api.Controllers.PlayersController.DeletePlayer(System.Int32)">
+            <summary>
+            Supprime un joueur existant.
+            </summary>
+            <param name="id">ID du joueur à supprimer.</param>
+            <returns>204 NoContent si supprimé, 404 si non trouvé.</returns>
+        </member>
+        <member name="M:TennisStatistics.Api.Controllers.StatsController.BestCountry">
+            <summary>
+            Gets the country with the highest win ratio.
+            </summary>
+            <returns>The country name with the best win ratio.</returns>
+            <response code="200">Returns the country with the best win ratio</response>
+        </member>
+        <member name="M:TennisStatistics.Api.Controllers.StatsController.AverageIMC">
+            <summary>
+            Gets the average IMC of all players.
+            </summary>
+            <returns>The average IMC as a double.</returns>
+            <response code="200">Returns the average IMC of players</response>
+        </member>
+        <member name="M:TennisStatistics.Api.Controllers.StatsController.MedianHeight">
+            <summary>
+            Gets the median height of all players.
+            </summary>
+            <returns>The median height in centimeters.</returns>
+            <response code="200">Returns the median height of players</response>
+        </member>
+    </members>
+</doc>

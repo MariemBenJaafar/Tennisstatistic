@@ -59,11 +59,11 @@ namespace TennisStatistics.Api.Controllers
         }
 
         /// <summary>
-        /// Met à jour un joueur existant.
+        /// Update an existing player.
         /// </summary>
-        /// <param name="id">ID du joueur à mettre à jour.</param>
-        /// <param name="dto">Données pour la mise à jour.</param>
-        /// <returns>Le joueur mis à jour ou 404 si non trouvé.</returns>
+        /// <param name="id">Player's ID.</param>
+        /// <param name="dto">Update player's data.</param>
+        /// <returns>the player is updated ou 404 if not found.</returns>
         [HttpPut("{id}")]
         [Produces("application/json")]
         [ProducesResponseType(typeof(PlayerDto), StatusCodes.Status200OK)]
@@ -86,13 +86,13 @@ namespace TennisStatistics.Api.Controllers
         }
 
         /// <summary>
-        /// Supprime un joueur existant.
+        /// Delete an existing player.
         /// </summary>
-        /// <param name="id">ID du joueur à supprimer.</param>
-        /// <returns>204 NoContent si supprimé, 404 si non trouvé.</returns>
+        /// <param name="id">the Deleted Player's ID.</param>
+        /// <returns>204 NoContent if deleted, 404 if not found.</returns>
         [HttpDelete("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)] // Si la suppression réussit
-        [ProducesResponseType(StatusCodes.Status404NotFound)]  // Si le joueur n'existe pas
+        [ProducesResponseType(StatusCodes.Status204NoContent)] 
+        [ProducesResponseType(StatusCodes.Status404NotFound)]  
         public IActionResult DeletePlayer(int id)
         {
             try
