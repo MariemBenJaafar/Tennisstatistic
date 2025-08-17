@@ -4,8 +4,8 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copier le fichier csproj et restaurer les dépendances
-COPY ["TennisStatistic/TennisStatistics.Api.csproj", "TennisStatistic/"]
-RUN dotnet restore "TennisStatistic/Tennisstatistic/TennisStatistics.Api.csproj"
+COPY ["TennisStatistic/Tennisstatistic/TennisStatistics.Api.csproj", "TennisStatistic/"]
+RUN dotnet restore "TennisStatistic/TennisStatistics.Api.csproj"
 
 # Copier le reste du projet et publier
 COPY . .
