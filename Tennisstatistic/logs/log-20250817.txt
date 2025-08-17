@@ -9,3 +9,8 @@
 2025-08-17 13:22:13.892 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 575.2808ms
 2025-08-17 13:22:14.046 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - null null
 2025-08-17 13:22:14.115 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.7861ms
+2025-08-17 14:01:05.200 +02:00 [INF] Now listening on: https://localhost:7199
+2025-08-17 14:01:05.274 +02:00 [INF] Now listening on: http://localhost:5256
+2025-08-17 14:01:05.482 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-17 14:01:05.485 +02:00 [INF] Hosting environment: Development
+2025-08-17 14:01:05.489 +02:00 [INF] Content root path: C:\Users\Mariem\source\repos\MariemBenJaafar\Tennisstatistic\Tennisstatistic

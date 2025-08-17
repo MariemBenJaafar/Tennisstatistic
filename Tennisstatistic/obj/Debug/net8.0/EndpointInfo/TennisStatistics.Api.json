@@ -86,12 +86,12 @@
         "tags": [
           "Players"
         ],
-        "summary": "Met à jour un joueur existant.",
+        "summary": "Update an existing player.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID du joueur à mettre à jour.",
+            "description": "Player's ID.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -100,7 +100,7 @@
           }
         ],
         "requestBody": {
-          "description": "Données pour la mise à jour.",
+          "description": "Update player's data.",
           "content": {
             "application/json": {
               "schema": {
@@ -149,12 +149,12 @@
         "tags": [
           "Players"
         ],
-        "summary": "Supprime un joueur existant.",
+        "summary": "Delete an existing player.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID du joueur à supprimer.",
+            "description": "the Deleted Player's ID.",
             "required": true,
             "schema": {
               "type": "integer",

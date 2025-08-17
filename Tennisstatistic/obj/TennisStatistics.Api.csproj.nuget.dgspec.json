@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj": {}
+    "C:\\Users\\Mariem\\source\\repos\\MariemBenJaafar\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj": {
+    "C:\\Users\\Mariem\\source\\repos\\MariemBenJaafar\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Mariem\\source\\repos\\MariemBenJaafar\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj",
         "projectName": "TennisStatistics.Api",
-        "projectPath": "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj",
+        "projectPath": "C:\\Users\\Mariem\\source\\repos\\MariemBenJaafar\\Tennisstatistic\\Tennisstatistic\\TennisStatistics.Api.csproj",
         "packagesPath": "C:\\Users\\Mariem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mariem\\source\\repos\\Tennisstatistic\\Tennisstatistic\\obj\\",
+        "outputPath": "C:\\Users\\Mariem\\source\\repos\\MariemBenJaafar\\Tennisstatistic\\Tennisstatistic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
