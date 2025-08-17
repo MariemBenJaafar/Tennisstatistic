@@ -716,3 +716,4 @@ C:\Users\Mariem\source\repos\MariemBenJaafar\Tennisstatistic\Tennisstatistic\obj
 C:\Users\Mariem\source\repos\MariemBenJaafar\Tennisstatistic\Tennisstatistic\obj\Debug\net8.0\TennisStatistics.Api.pdb
 C:\Users\Mariem\source\repos\MariemBenJaafar\Tennisstatistic\Tennisstatistic\obj\Debug\net8.0\TennisStatistics.Api.genruntimeconfig.cache
 C:\Users\Mariem\source\repos\MariemBenJaafar\Tennisstatistic\Tennisstatistic\obj\Debug\net8.0\ref\TennisStatistics.Api.dll
+C:\Users\Mariem\source\repos\MariemBenJaafar\Tennisstatistic\Tennisstatistic\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
