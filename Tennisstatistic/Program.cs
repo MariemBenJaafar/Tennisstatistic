@@ -62,7 +62,7 @@ app.MapGet("/", () => Results.Content(@"
   <html>
     <body>
       <h1>Bienvenue sur TennisStatistic API</h1>
-      <p>Accédez à la documentation <a href='/swagger'>ici</a>.</p>
+      <p>la documentation Swagger est <a href='/swagger'>ici</a>.</p>
     </body>
   </html>", "text/html"));
 
