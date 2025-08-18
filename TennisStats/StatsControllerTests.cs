@@ -27,7 +27,7 @@ namespace TennisStatsTests
             var okResult = Assert.IsType<OkObjectResult>(result);
             var json = JsonSerializer.Serialize(okResult.Value);
             var dict = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
-            Assert.Equal("ESP", dict["country"]);
+            Assert.Equal("ESP", dict["bestCountry"]);
         }
 
         [Fact]
